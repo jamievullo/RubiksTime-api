@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+    has_many :cubes
+    has_many :records
 
     has_secure_password
 
