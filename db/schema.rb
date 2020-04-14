@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_04_13_211343) do
   end
 
   create_table "records", force: :cascade do |t|
-    t.float "record"
+    t.float "cube_time"
     t.integer "cube_id"
     t.integer "user_id"
   end
