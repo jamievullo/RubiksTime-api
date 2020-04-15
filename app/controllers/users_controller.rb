@@ -18,7 +18,8 @@ class UsersController < ApplicationController
         @user = User.find(params[:id])
     if @user
         render json: {
-            user: @user
+            user: @user,
+            cubeTimes: @user.records
         }
         else
         render json: {
